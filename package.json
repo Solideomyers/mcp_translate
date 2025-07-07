@@ -1,0 +1,45 @@
+{
+  "name": "mcp-historical-translation-server",
+  "version": "1.0.0",
+  "description": "MCP server for translating early modern English Baptist texts to contemporary Spanish",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch & node --watch dist/index.js",
+    "test": "jest",
+    "lint": "eslint src/**/*.ts",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "mcp",
+    "translation",
+    "historical",
+    "ocr",
+    "baptist",
+    "17th-century"
+  ],
+  "author": "Tu nombre",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.4.0",
+    "mammoth": "^1.6.0",
+    "pdf.js-extract": "^0.2.1",
+    "tesseract.js": "^5.0.4",
+    "zod": "^3.25.75"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.0.0",
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "jest": "^29.0.0",
+    "ts-jest": "^29.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
